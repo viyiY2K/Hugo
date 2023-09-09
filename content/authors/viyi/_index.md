@@ -7,7 +7,7 @@ social:
 
   - icon: envelope
     iconPack: fas
-    url: viyiY2K@gmail.com
+    url: mailto:viyiY2K@gmail.com
   - icon: telegram
     iconPack: fab
     url: https://t.me/viyiY2K

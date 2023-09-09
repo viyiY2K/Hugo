@@ -2,11 +2,11 @@
 title: 枝因
 draft: false
 avatar: images/icon.png
-bio: Per aspera ad astra · 寻此苦旅，终达星辰
+bio: Per aspera ad astra · 寻此苦旅 终达星辰
 social:
   - icon: envelope
     iconPack: fas
-    url: viyiY2K@gmail.com
+    url: mailto:viyiY2K@gmail.com
   - icon: telegram
     iconPack: fab
     url: https://t.me/viyiY2K

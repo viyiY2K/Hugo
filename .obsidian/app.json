@@ -1,1 +1,23 @@
-{}
+{
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A5",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 68
+  },
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content/posts",
+  "userIgnoreFilters": [
+    "archetypes/",
+    "config/",
+    "public/",
+    "data/",
+    "i18n/",
+    "layouts/",
+    "static/",
+    "themes/"
+  ],
+  "showInlineTitle": false,
+  "readableLineLength": false
+}

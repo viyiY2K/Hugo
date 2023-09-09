@@ -1,4 +1,7 @@
 {
   "accentColor": "",
-  "theme": "moonstone"
+  "theme": "moonstone",
+  "baseFontSize": 25,
+  "interfaceFontFamily": "思源宋体 CN",
+  "textFontFamily": "思源宋体 CN"
 }
