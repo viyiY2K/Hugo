@@ -1,6 +1,6 @@
 mainSections:
   - posts
-description: Eureka is a elegant and powerful theme for Hugo.
+description: 这是 @枝因 的个人博客，记录她的所思所想。
 
 repoEditURL:
 
@@ -18,7 +18,7 @@ style:
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType: Person
 icon: images/icon.png
-publisherName: WANG Chucheng
+publisherName: 枝因（viyi）
 publisherLogo:
 
 highlight:
