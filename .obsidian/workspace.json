@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "3d149a1d44dbf802",
+    "type": "split",
+    "children": [
+      {
+        "id": "091a41aeed977786",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b876390133f82180",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/Notes/里要控几住你记几啊，少年！.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5a6cad06dc56df88",
+    "type": "split",
+    "children": [
+      {
+        "id": "13ba39ee6d288b50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c4167270bbbed54",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0a883491fe56fb02",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e09f004d2e7fe544",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c64a8390c336b167",
+    "type": "split",
+    "children": [
+      {
+        "id": "c7d3b6b420e96de5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5eeabccaa12672d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "content/posts/Notes/里要控几住你记几啊，少年！.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cb14b45f5cab24c4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "content/posts/Notes/里要控几住你记几啊，少年！.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5ad84487dc285172",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0b812e2d5fea3739",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "content/posts/Notes/里要控几住你记几啊，少年！.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "b876390133f82180",
+  "lastOpenFiles": [
+    "content/posts/Notes/Markdown 简明指北.md",
+    "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
+    "content/posts/Notes/里要控几住你记几啊，少年！.md",
+    "content/posts/Notes/卡片盒笔记到底是什么？.md",
+    "content/posts/Notes/初搭博客记.md",
+    "content/posts/CPTSD/思考病躯.md",
+    "content/posts/CPTSD/过去的囚徒.md"
+  ]
+}

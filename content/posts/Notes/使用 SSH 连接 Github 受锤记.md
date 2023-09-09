@@ -5,7 +5,8 @@ toc: true
 authors:
   - viyi
 tags:
-- Markdown
+- SSH
+- Github
 categories:
   - 札记
   - TP 计算机
@@ -21,7 +22,7 @@ lastmod: 2023-06-02
 
 ## 孤岛简中
 
-依旧使用 ssh (Secure Shell) 来连接到 GitHub，起初还是下意识想要[创建新的密钥](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)，毕竟[之前](https://viyi.cc/cs/building_a_blog.html)也这么干过，还灵光一现顺手改了个名字（记住这个下意识和顺手，后面要考🚬）。把公钥给到 GitHub 之后，用 `ssh -T git@github.com` 进行连接测试，结果报错 `Connection closed` ，这才开始启动大脑。
+依旧使用 ssh (Secure Shell) 来连接到 GitHub，起初还是下意识想要[创建新的密钥](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)，毕竟[之前](https://viyi.cc/Notes/building_a_blog.html)也这么干过，还灵光一现顺手改了个名字（记住这个下意识和顺手，后面要考🚬）。把公钥给到 GitHub 之后，用 `ssh -T git@github.com` 进行连接测试，结果报错 `Connection closed` ，这才开始启动大脑。
 
 查了好半天原因被溜回[官方文档](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)，于是默默把它在寻找这类问题解决方法的路径优先级调高至 top。
 
@@ -40,7 +41,7 @@ Host github.com
 
 ## 我很好奇
 
-![冰菓](https://i2.hdslb.com/bfs/archive/1d7600dee4177b9f30a057de75a0f2d15acbb577.jpg)
+![冰菓](https://zyin-1309341307.cos.ap-nanjing.myqcloud.com/note/1694227110862.png))
 
 官方文档提供的解决路径是把 ssh 的连接端口换成 HTTPS 的默认端口，网上[查到也有说](https://www.v2ex.com/t/807649)可以通过在 config 中添加 `ProxyCommand nc -v -x 127.0.0.1:7890 %h %p` 来解决。顺手查了些拓展资料，还挺有意思的。
 
