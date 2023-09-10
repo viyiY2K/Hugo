@@ -1,5 +1,5 @@
 ---
-url: "Thoughts/oh_god_these_stars"
+url: "thoughts/oh_god_these_stars"
 title: Oh god, these stars.
 toc: true
 authors:

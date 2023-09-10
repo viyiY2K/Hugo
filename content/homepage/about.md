@@ -13,9 +13,6 @@ social:
   - icon: zhihu
     iconPack: fab
     url: https://www.zhihu.com/people/zhi-yin-233
-  - icon: rss
-    iconPack: fas
-    url: index.xml
 
 weight: 1
 widget:
