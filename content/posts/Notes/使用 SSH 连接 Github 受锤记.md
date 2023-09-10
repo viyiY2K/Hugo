@@ -1,5 +1,5 @@
 ---
-url: "notes/connection_closed_and_permission_denied"
+url: "connection_closed_and_permission_denied"
 title: 使用 SSH 连接 Github 受锤记
 toc: true
 authors:
@@ -22,7 +22,7 @@ lastmod: 2023-06-02
 
 ## 孤岛简中
 
-依旧使用 ssh (Secure Shell) 来连接到 GitHub，起初还是下意识想要[创建新的密钥](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)，毕竟[之前](https://viyi.cc/notes/building_a_blog.html)也这么干过，还灵光一现顺手改了个名字（记住这个下意识和顺手，后面要考🚬）。把公钥给到 GitHub 之后，用 `ssh -T git@github.com` 进行连接测试，结果报错 `Connection closed` ，这才开始启动大脑。
+依旧使用 ssh (Secure Shell) 来连接到 GitHub，起初还是下意识想要[创建新的密钥](https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)，毕竟[之前](https://viyi.cc/building_a_blog.html)也这么干过，还灵光一现顺手改了个名字（记住这个下意识和顺手，后面要考🚬）。把公钥给到 GitHub 之后，用 `ssh -T git@github.com` 进行连接测试，结果报错 `Connection closed` ，这才开始启动大脑。
 
 查了好半天原因被溜回[官方文档](https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)，于是默默把它在寻找这类问题解决方法的路径优先级调高至 top。
 

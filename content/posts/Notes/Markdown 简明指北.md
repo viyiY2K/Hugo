@@ -1,6 +1,6 @@
 ---
 toc: true
-url: "notes/markdown_tutorial"
+url: "markdown_tutorial"
 title: Markdown 简明指北
 authors:
   - viyi
