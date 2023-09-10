@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -156,7 +155,7 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "1502af868bc7c16e",
+  "active": "3c4167270bbbed54",
   "lastOpenFiles": [
     "public/the_willpower_instinct/index.html",
     "public/the_willpower_instinct",
