@@ -11,8 +11,12 @@
             "id": "1502af868bc7c16e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/Thoughts/再搭博客记.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/再搭博客记.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/再搭博客记.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -130,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/再搭博客记.md"
+                "file": "content/posts/Thoughts/再搭博客记.md"
               }
             }
           }
@@ -154,6 +158,9 @@
   },
   "active": "3c4167270bbbed54",
   "lastOpenFiles": [
+    "content/posts/CPTSD/过去的囚徒.md",
+    "content/posts/CPTSD/过去的囚徒 1.md",
+    "content/posts/CPTSD/思考病躯 1.md",
     "public/tags/cptsd/page/2/index.html",
     "public/tags/cptsd/page/2",
     "public/posts/page/5/index.html",
@@ -164,9 +171,8 @@
     "public/categories/youcan/page/2",
     "public/categories/b84-心理学/page/2/index.html",
     "public/categories/b84-心理学/page/2",
-    "public/authors/viyii/page/2/index.html",
     "content/categories.md",
-    "content/posts/再搭博客记.md",
+    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Notes/初搭博客记.md",
     "content/posts/Notes/Markdown 简明指北.md",
     "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
@@ -174,9 +180,6 @@
     "content/posts/Notes/里要控几住你记几啊，少年！.md",
     "content/模板/分类标准.md",
     "content/模板/ymal.md",
-    "content/posts/CPTSD/思考病躯 1.md",
-    "content/posts/CPTSD/思考病躯.md",
-    "content/posts/CPTSD/过去的囚徒 1.md",
-    "content/posts/CPTSD/过去的囚徒.md"
+    "content/posts/CPTSD/思考病躯.md"
   ]
 }
