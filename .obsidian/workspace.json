@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Notes/使用 SSH 连接 Github 受锤记.md"
+                "file": "content/posts/Thoughts/再搭博客记.md"
               }
             }
           }
@@ -157,6 +158,18 @@
   },
   "active": "1502af868bc7c16e",
   "lastOpenFiles": [
+    "public/the_willpower_instinct/index.html",
+    "public/the_willpower_instinct",
+    "public/prisoner_of_the_past/index.html",
+    "public/prisoner_of_the_past",
+    "public/building_a_blog/index.html",
+    "public/building_a_blog",
+    "public/about_graduation/index.html",
+    "public/about_graduation",
+    "public/building_blog_again/index.html",
+    "public/building_blog_again",
+    "public/success_is_not_necessary_for_me/index.html",
+    "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
     "content/posts/Thoughts/再搭博客记.md",
     "content/posts/CPTSD/过去的囚徒.md",
     "content/posts/CPTSD/思考病躯.md",
@@ -164,7 +177,6 @@
     "content/posts/Notes/里要控几住你记几啊，少年！.md",
     "content/posts/Notes/卡片盒笔记到底是什么？.md",
     "content/posts/Notes/初搭博客记.md",
-    "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
     "content/posts/Notes/Markdown 简明指北.md",
     "content/posts/Thoughts/记毕业三两事.md",
     "content/posts/Thoughts/成功不必在我.md",
@@ -172,16 +184,6 @@
     "content/模板/分类标准.md",
     "content/posts/CPTSD/过去的囚徒 1.md",
     "content/posts/CPTSD/思考病躯 1.md",
-    "public/tags/cptsd/page/2/index.html",
-    "public/tags/cptsd/page/2",
-    "public/posts/page/5/index.html",
-    "public/posts/page/5",
-    "public/categories/随想/page/2/index.html",
-    "public/categories/随想/page/2",
-    "public/categories/youcan/page/2/index.html",
-    "public/categories/youcan/page/2",
-    "public/categories/b84-心理学/page/2/index.html",
-    "public/categories/b84-心理学/page/2",
     "content/categories.md"
   ]
 }
