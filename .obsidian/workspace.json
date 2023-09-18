@@ -25,9 +25,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Notes/为什么要自 0 始计数？.md",
+                "file": "ymal.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Notes/为什么要自 0 始计数？.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -124,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Notes/为什么要自 0 始计数？.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Notes/为什么要自 0 始计数？.md"
+                "file": "content/posts/Thoughts/再搭博客记.md"
               }
             }
           }
@@ -169,8 +169,11 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "3f7789c960a349dc",
+  "active": "3c4167270bbbed54",
   "lastOpenFiles": [
+    "content/模板/分类标准.md",
+    "ymal.md",
+    "content/posts/Notes/为什么要自 0 始计数？.md",
     "public/tags/编码方式/page/1/index.html",
     "public/tags/编码方式/page/1",
     "public/tags/编码方式/page",
@@ -181,9 +184,7 @@
     "public/tags/下标/page/1",
     "public/tags/下标/page",
     "public/tags/下标/index.xml",
-    "public/tags/下标/index.html",
     "content/posts/Notes/里要控几住你记几啊，少年！.md",
-    "content/posts/Notes/为什么要自 0 始计数？.md",
     "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
     "content/posts/CPTSD/过去的囚徒.md",
@@ -194,8 +195,6 @@
     "content/posts/Notes/Markdown 简明指北.md",
     "content/posts/Thoughts/记毕业三两事.md",
     "content/posts/Thoughts/成功不必在我.md",
-    "content/模板/ymal.md",
-    "content/模板/分类标准.md",
     "content/posts/CPTSD/过去的囚徒 1.md",
     "content/posts/CPTSD/思考病躯 1.md",
     "content/categories.md"
