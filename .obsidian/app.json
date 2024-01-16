@@ -19,5 +19,6 @@
     "themes/"
   ],
   "showInlineTitle": false,
-  "readableLineLength": false
+  "readableLineLength": false,
+  "attachmentFolderPath": "public/images"
 }

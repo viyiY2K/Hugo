@@ -11,8 +11,12 @@
             "id": "63709bd37d292df7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/Thoughts/尽量晚点投降.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/posts/Thoughts/尽量晚点投降.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/posts/Thoughts/尽量晚点投降.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "content/posts/Thoughts/尽量晚点投降.md"
+              }
             }
           }
         ],
@@ -150,6 +158,9 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "public/images/手腕纹身.jpg",
+    "public/images/Markdown.png",
+    "content/posts/Thoughts/尽量晚点投降.md",
     "content/posts/Review/二〇二三.md",
     "content/posts/Review/二〇二二.md",
     "content/posts/Notes/从零开始.md",
