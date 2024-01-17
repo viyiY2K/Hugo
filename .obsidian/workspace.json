@@ -85,11 +85,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c64a8390c336b167",
@@ -167,7 +169,7 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "63709bd37d292df7",
+  "active": "0a883491fe56fb02",
   "lastOpenFiles": [
     "content/posts/Review/二〇二二.md",
     "content/posts/Thoughts/尽量晚点投降.md",
