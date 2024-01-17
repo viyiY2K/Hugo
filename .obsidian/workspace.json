@@ -15,7 +15,7 @@
               "state": {
                 "file": "content/posts/Thoughts/尽量晚点投降.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -74,12 +74,11 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c64a8390c336b167",
@@ -159,8 +158,10 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
-    "content/posts/Review/二〇二二.md",
+    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Thoughts/尽量晚点投降.md",
+    "content/posts/Thoughts/Oh god, these stars..md",
+    "content/posts/Review/二〇二二.md",
     "public/images/032722454461_02022-03-27_22-43-27.png",
     "public/images/031919410898_02022-03-19_19-39-27.png",
     "public/images/2024考研进度确认.png",
@@ -179,9 +180,7 @@
     "public/annual_review_2023/index.html",
     "public/annual_review_2023",
     "content/posts/Notes/Markdown 简明指北.md",
-    "content/posts/Thoughts/Oh god, these stars..md",
     "content/posts/Thoughts/记毕业三两事.md",
-    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/CPTSD/思考病躯.md",
     "content/posts/Notes/里要控几住你记几啊，少年！.md",
     "content/模板/分类标准.md",
