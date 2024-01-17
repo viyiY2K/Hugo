@@ -18,6 +18,18 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3bc746b04e0eb70f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/posts/Review/二〇二二.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -73,12 +85,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c64a8390c336b167",
@@ -158,14 +170,14 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "content/posts/Review/二〇二二.md",
+    "content/posts/Thoughts/尽量晚点投降.md",
     "public/images/032722454461_02022-03-27_22-43-27.png",
     "public/images/031919410898_02022-03-19_19-39-27.png",
-    "content/posts/Thoughts/尽量晚点投降.md",
     "public/images/2024考研进度确认.png",
     "public/images/手腕纹身.jpg",
     "public/images/Markdown.png",
     "content/posts/Review/二〇二三.md",
-    "content/posts/Review/二〇二二.md",
     "content/posts/Notes/从零开始.md",
     "public/tags/年末回顾/page/1/index.html",
     "public/tags/年末回顾/page/1",

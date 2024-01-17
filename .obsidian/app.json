@@ -20,5 +20,7 @@
   ],
   "showInlineTitle": false,
   "readableLineLength": false,
-  "attachmentFolderPath": "public/images"
+  "attachmentFolderPath": "public/images",
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
 }
