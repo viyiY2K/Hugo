@@ -15,7 +15,7 @@
               "state": {
                 "file": "content/posts/Thoughts/尽量晚点投降.md",
                 "mode": "source",
-                "source": true
+                "source": false
               }
             }
           }
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c64a8390c336b167",
