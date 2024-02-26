@@ -2,12 +2,12 @@ main:
 #  - name: 分类
 #    url: '/categories/'
 #    weight: 1
-  - name: 标签
-    url: '/tags/'
-    weight: 2
-  - name: 存档
-    url: /posts/
-    weight: 3
+#  - name: 标签
+#    url: '/tags/'
+#    weight: 2
+#  - name: 存档
+#    url: /posts/
+#    weight: 3
   - name: 关于
     url: '/about_me/'
     weight: 4

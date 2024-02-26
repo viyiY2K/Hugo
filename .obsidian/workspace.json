@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Thoughts/尽量晚点投降.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Thoughts/尽量晚点投降.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Thoughts/尽量晚点投降.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Thoughts/尽量晚点投降.md"
+                "file": "README.md"
               }
             }
           }
@@ -158,18 +157,24 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "ymal.md",
+    "content/docs/_index.md",
+    "content/homepage/vintage.md",
+    "content/homepage/pages.md",
+    "content/about_me.md",
+    "content/posts/Notes/初搭博客记.md",
+    "content/posts/Review/二〇二三.md",
+    "content/posts/Review/二〇二二.md",
+    "content/posts/Thoughts/再搭博客记.md",
+    "content/posts/Thoughts/尽量晚点投降.md",
     "public/images/2023阅读计划未完成情况.png",
     "public/images/2022+2023时间统计.jpg",
-    "content/posts/Review/二〇二二.md",
-    "content/posts/Thoughts/尽量晚点投降.md",
-    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Thoughts/Oh god, these stars..md",
     "public/images/032722454461_02022-03-27_22-43-27.png",
     "public/images/031919410898_02022-03-19_19-39-27.png",
     "public/images/2024考研进度确认.png",
     "public/images/手腕纹身.jpg",
     "public/images/Markdown.png",
-    "content/posts/Review/二〇二三.md",
     "content/posts/Notes/从零开始.md",
     "public/tags/年末回顾/page/1/index.html",
     "public/tags/年末回顾/page/1",
@@ -186,11 +191,9 @@
     "content/posts/CPTSD/思考病躯.md",
     "content/posts/Notes/里要控几住你记几啊，少年！.md",
     "content/模板/分类标准.md",
-    "ymal.md",
     "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
     "content/posts/CPTSD/过去的囚徒.md",
     "content/posts/Notes/卡片盒笔记到底是什么？.md",
-    "content/posts/Notes/初搭博客记.md",
     "content/posts/Thoughts/成功不必在我.md",
     "content/posts/CPTSD/过去的囚徒 1.md",
     "content/posts/CPTSD/思考病躯 1.md",
