@@ -6,7 +6,7 @@ bio: Per aspera ad astra · 寻此苦旅 终达星辰
 social:
   - icon: envelope
     iconPack: fas
-    url: mailto:viyiY2K@gmail.com
+    url: mailto:viyiY2K@outlook.com
   - icon: telegram
     iconPack: fab
     url: https://t.me/viyiY2K
