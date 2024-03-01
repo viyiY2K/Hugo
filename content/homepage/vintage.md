@@ -1,7 +1,7 @@
 ---
 title: Vintage
 draft: false
-slogan: YOU LIFE IS THE RESULT OF YOUR OWN DECISIONS.
+slogan: 如果必须坠落，就让我坠落，我会成为的那个人一定会接住我。
 imgLeft: images/left.gif
 imgRight: images/right.jpeg
 
