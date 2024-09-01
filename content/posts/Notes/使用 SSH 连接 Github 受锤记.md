@@ -9,7 +9,6 @@ tags:
 - Github
 categories:
   - 札记
-  - TP 计算机
 date: 2023-06-01
 lastmod: 2023-06-02
 ---

@@ -8,7 +8,6 @@ tags:
  - Markdown
 categories:
   - 札记
-  - TP 计算机
 featuredImage: images/Markdown.png
 date: 2023-02-14
 lastmod: 2023-05-24

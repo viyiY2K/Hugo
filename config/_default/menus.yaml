@@ -5,13 +5,19 @@ main:
 #  - name: 标签
 #    url: '/tags/'
 #    weight: 2
-#  - name: 存档
-#    url: /posts/
-#    weight: 3
+
   - name: 关于
     url: '/about_me/'
+    weight: 1
+  - name: 札记 
+    url: '/categories/札记/'
+    weight: 2
+  - name: 随想
+    url: '/categories/随想/'
+    weight: 3
+  - name: 自救
+    url: '/categories/youcan/'
     weight: 4
-
 #  - name: Docs
 #    url: /docs/
 #    weight: 3
