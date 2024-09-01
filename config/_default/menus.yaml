@@ -21,6 +21,6 @@ main:
   - name: 关于我
     url: '/about_me/'
     weight: 5
-  - name: CCCS
-    url: /docs/
-    weight: 6
+#  - name: CCCS
+#    url: /docs/
+#    weight: 6

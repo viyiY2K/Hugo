@@ -1,5 +1,5 @@
 ---
-title: _index
+title: 2 程序设计
 description: 对应视频分 P 为 p10~16。
 toc: true
 authors:
