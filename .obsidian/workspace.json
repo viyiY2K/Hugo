@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/about_me.md",
+                "file": "content/posts/Notes/重学打字.md",
                 "mode": "source",
                 "source": true
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/about_me.md",
+                "file": "content/posts/Notes/重学打字.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/about_me.md",
+                "file": "content/posts/Notes/重学打字.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/about_me.md"
+                "file": "content/posts/Notes/重学打字.md"
               }
             }
           }
@@ -156,12 +156,18 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "3c4167270bbbed54",
+  "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "content/posts/CPTSD/过去的囚徒.md",
+    "content/posts/Notes/重学打字.md",
+    "content/posts/Notes/从零开始.md",
+    "content/posts/Notes/里要控几住你记几啊，少年！.md",
+    "content/posts/Thoughts/要有一个远见，超越你所未见.md",
+    "content/posts/Notes/Markdown 简明指北.md",
+    "content/about_me.md",
     "ymal.md",
     "content/posts/Notes/初搭博客记.md",
     "content/posts/Thoughts/再搭博客记.md",
-    "content/posts/Thoughts/要有一个远见，超越你所未见.md",
     "public/tags/职场/page/1/index.html",
     "public/tags/职场/page/1",
     "public/tags/职场/page",
@@ -172,14 +178,12 @@
     "public/categories/札记/page/3",
     "public/have_the_long_view_beyond_what_you_have_not_seen/index.html",
     "public/have_the_long_view_beyond_what_you_have_not_seen",
-    "content/posts/Notes/从零开始.md",
     "content/posts/Thoughts/记毕业三两事.md",
     "content/posts/Thoughts/Oh god, these stars..md",
     "README.md",
     "content/docs/_index.md",
     "content/homepage/vintage.md",
     "content/homepage/pages.md",
-    "content/about_me.md",
     "content/posts/Review/二〇二三.md",
     "content/posts/Review/二〇二二.md",
     "content/posts/Thoughts/尽量晚点投降.md",
@@ -190,12 +194,9 @@
     "public/images/2024考研进度确认.png",
     "public/images/手腕纹身.jpg",
     "public/images/Markdown.png",
-    "content/posts/Notes/Markdown 简明指北.md",
     "content/posts/CPTSD/思考病躯.md",
-    "content/posts/Notes/里要控几住你记几啊，少年！.md",
     "content/模板/分类标准.md",
     "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
-    "content/posts/CPTSD/过去的囚徒.md",
     "content/posts/Notes/卡片盒笔记到底是什么？.md",
     "content/posts/Thoughts/成功不必在我.md",
     "content/posts/CPTSD/过去的囚徒 1.md",
