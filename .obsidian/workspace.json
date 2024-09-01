@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
+                "file": "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
+                "file": "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
+                "file": "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Notes/重学打字.md"
+                "file": "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md"
               }
             }
           }
@@ -157,18 +157,23 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "public/docs/operating_system/3.9-图形用户界面graphical-user-interfaces/index.html",
+    "public/docs/operating_system/3.9-图形用户界面graphical-user-interfaces",
+    "public/docs/operating_system/3.8-个人计算机革命the-personal-computer-revolution/index.html",
+    "public/docs/operating_system/3.8-个人计算机革命the-personal-computer-revolution",
+    "public/docs/operating_system/3.5-人机交互human-computer-interaction/index.html",
+    "public/docs/operating_system/3.5-人机交互human-computer-interaction",
+    "content/docs/computer_organization_principles/1.3 布尔逻辑与逻辑电路（Boolean Logic & Logic Gates）.md",
+    "content/docs/computer_organization_principles/1.4 二进制表示法（Representing Numbers and Letters with Binary）.md",
+    "content/docs/computer_organization_principles/1.1早期的计算.md",
+    "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md",
+    "content/posts/Notes/重学打字.md",
     "README.md",
     "public/docs/operating_system/3.6-屏幕-2d-图形显示-screens-2d-graphics/index.html",
     "public/docs/operating_system/3.6-屏幕-2d-图形显示-screens-2d-graphics",
     "public/docs/operating_system/3.3-文件系统files-file-systems/index.html",
     "public/docs/operating_system/3.3-文件系统files-file-systems",
     "public/docs/extended_discussion/5.3-自然语言处理-natural-language-processing/index.html",
-    "public/docs/extended_discussion/5.3-自然语言处理-natural-language-processing",
-    "public/docs/extended_discussion/5.4-机器人-robots/index.html",
-    "public/docs/extended_discussion/5.4-机器人-robots",
-    "content/docs/computer_organization_principles/1.2 电子计算（Electronic Computing）.md",
-    "public/CCCS/01_计算机组成/index.xml",
-    "public/CCCS/01/index.xml",
     "public/images/2电子元器件发展历史_页面_2.jpg",
     "public/images/2电子元器件发展历史_页面_1.jpg",
     "content/docs/computer_organization_principles/1.9 高级 CPU 设计（Advanced CPU Designs）.md",
@@ -178,7 +183,6 @@
     "content/docs/extended_discussion/_index.md",
     "content/docs/computer_organization_principles/_index.md",
     "content/docs/4_computer_network/_index.md",
-    "content/posts/Notes/重学打字.md",
     "content/docs_1/example-doc/nested-chapter/_index.md",
     "content/docs_1/example-doc/nested-chapter/chapter-2.md",
     "content/docs_1/example-doc/nested-chapter/chapter-1.md",
@@ -198,10 +202,6 @@
     "content/docs/programming/2.6 阿兰·图灵（Alan Turing）.md",
     "content/docs/programming/2.4 算法入门（Intro to Algorithms）.md",
     "content/docs/programming/2.5 数据结构（Data Structures）.md",
-    "content/docs/programming/2.3 编程原理：语句和函数（Programming Basics Statements & Functions）.md",
-    "content/docs/programming/2.2 编程语言（The First Programming Languages）.md",
-    "content/docs/programming/2.1 编程史话（Early Programming）.md",
-    "content/docs/operating_system/3.9 图形用户界面（Graphical User Interfaces）.md",
-    "content/docs/operating_system/3.8 个人计算机革命（The Personal Computer Revolution）.md"
+    "content/docs/programming/2.3 编程原理：语句和函数（Programming Basics Statements & Functions）.md"
   ]
 }
