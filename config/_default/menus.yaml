@@ -6,11 +6,9 @@ main:
 #    url: '/tags/'
 #    weight: 2
 
-  - name: 关于
-    url: '/about_me/'
-    weight: 1
+
   - name: 札记 
-    url: '/categories/札记/'
+    url: '/Notes/'
     weight: 2
   - name: 随想
     url: '/categories/随想/'
@@ -18,6 +16,9 @@ main:
   - name: 自救
     url: '/categories/youcan/'
     weight: 4
+  - name: 关于我
+    url: '/about_me/'
+    weight: 5
 #  - name: Docs
 #    url: /docs/
 #    weight: 3
