@@ -1,10 +1,10 @@
 ---
-title: about_me
+title: Nobody
 description: YOU LIFE IS THE RESULT OF YOUR OWN DECISIONS
 toc: true
-categories:
+categories: 
 date: 2023-05-02
-lastmod: 2024-02-26
+lastmod: 2024-06-15
 ---
 
 并没有什么好介绍的，一句两句聊不清楚无常的生命，但还是按照惯例写点什么。
@@ -13,7 +13,7 @@ lastmod: 2024-02-26
 
 ## 🙎‍♀️ 关于我
 
-INFJ，挺不来事一女的。想成为马猴烧酒，想活在真实世界，想茁壮成长，目前在努力求职。
+INFJ，挺不来事一女的。想成为马猴烧酒，想活在真实世界，想茁壮成长，目前在 [@先看评测](https://space.bilibili.com/483311105) 当运营。
 
 ## ✍️ 关于博客
 

@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Thoughts/再搭博客记.md",
-                "mode": "preview",
+                "file": "content/about_me.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Thoughts/再搭博客记.md",
+                "file": "content/about_me.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Thoughts/再搭博客记.md",
+                "file": "content/about_me.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Thoughts/再搭博客记.md"
+                "file": "content/about_me.md"
               }
             }
           }
@@ -156,8 +156,11 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "63709bd37d292df7",
+  "active": "3c4167270bbbed54",
   "lastOpenFiles": [
+    "ymal.md",
+    "content/posts/Notes/初搭博客记.md",
+    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Thoughts/要有一个远见，超越你所未见.md",
     "public/tags/职场/page/1/index.html",
     "public/tags/职场/page/1",
@@ -171,15 +174,12 @@
     "public/have_the_long_view_beyond_what_you_have_not_seen",
     "content/posts/Notes/从零开始.md",
     "content/posts/Thoughts/记毕业三两事.md",
-    "content/posts/Thoughts/再搭博客记.md",
     "content/posts/Thoughts/Oh god, these stars..md",
     "README.md",
-    "ymal.md",
     "content/docs/_index.md",
     "content/homepage/vintage.md",
     "content/homepage/pages.md",
     "content/about_me.md",
-    "content/posts/Notes/初搭博客记.md",
     "content/posts/Review/二〇二三.md",
     "content/posts/Review/二〇二二.md",
     "content/posts/Thoughts/尽量晚点投降.md",
