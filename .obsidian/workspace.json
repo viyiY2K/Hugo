@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
+                "file": "content/about_me.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
+                "file": "content/about_me.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
+                "file": "content/about_me.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md"
+                "file": "content/about_me.md"
               }
             }
           }
@@ -158,13 +157,21 @@
   },
   "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "content/docs/4_computer_network/_index.md",
+    "content/docs/computer_organization_principles/_index.md",
+    "content/docs/extended_discussion/_index.md",
+    "content/docs/operating_system/_index.md",
+    "content/docs/programming/2.3 编程原理：语句和函数（Programming Basics Statements & Functions）.md",
+    "content/docs/programming/2.2 编程语言（The First Programming Languages）.md",
+    "content/docs/programming/2.1 编程史话（Early Programming）.md",
+    "content/docs/programming/_index.md",
+    "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
     "content/docs/extended_discussion/5.6 教育型科技 (Educational Technology).md",
     "content/docs/extended_discussion/5.7 奇点，天网，计算机的未来(The Singularity, Skynet, and the Future of Computing).md",
     "content/docs/extended_discussion/5.4 机器人 (Robots).md",
     "content/docs/extended_discussion/5.3 自然语言处理 (Natural Language Processing).md",
     "content/docs/extended_discussion/5.2 计算机视觉 (Computer Vision).md",
     "content/docs/extended_discussion/5.1 机器学习与人工智能 (Machine Learning & Artificial Intelligence).md",
-    "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
     "content/docs/4_computer_network/4.6 加密 (Cryptography).md",
     "content/docs/4_computer_network/4.5 黑客与攻击 (Hackers & Cyber Attacks).md",
     "content/docs/4_computer_network/4.4 网络安全 (Cybersecurity).md",
@@ -179,12 +186,6 @@
     "public/images/存储.png",
     "content/docs/operating_system/3.4 压缩（Compression）.md",
     "content/docs/operating_system/3.5 人机交互（Human-Computer Interaction）.md",
-    "content/docs/operating_system/3.6 屏幕 & 2D 图形显示 - Screens & 2D Graphics.md",
-    "content/docs/operating_system/3.7 冷战和消费主义（The Cold War and Consumerism）.md",
-    "content/docs/operating_system/3.8 个人计算机革命（The Personal Computer Revolution）.md",
-    "content/docs/operating_system/3.9 图形用户界面（Graphical User Interfaces）.md",
-    "content/docs/operating_system/3.10 3D 图形（3D Graphics）.md",
-    "content/docs/programming/2.4 算法入门（Intro to Algorithms）.md",
     "public/CCCS/extended_discussion/page/2/index.html",
     "public/CCCS/extended_discussion/page/1/index.html",
     "public/CCCS/extended_discussion/page/3/index.html",
@@ -195,8 +196,6 @@
     "public/CCCS/extended_discussion/5.7-奇点天网计算机的未来the-singularity-skynet-and-the-future-of-computing/index.html",
     "public/CCCS/extended_discussion/5.4-机器人-robots/index.html",
     "public/CCCS/extended_discussion/5.5-计算机中的心理学-psychology-of-computing/index.html",
-    "content/docs/programming/2.3 编程原理：语句和函数（Programming Basics Statements & Functions）.md",
-    "content/docs/programming/2.2 编程语言（The First Programming Languages）.md",
     "public/images/2电子元器件发展历史_页面_2.jpg",
     "public/images/2电子元器件发展历史_页面_1.jpg",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 9%3A日 16%3A时 54%3A分 32%3A秒 eiqzf4f3za1673254472039.png",

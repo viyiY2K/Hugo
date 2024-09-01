@@ -6,10 +6,9 @@ authors:
 tags:
 categories:
 series:
-date: '2020-10-16'
-lastmod: '2020-10-16'
+date: '2022-10-02'
+lastmod: '2024-09-01'
 draft: false
 ---
 
-This is the root of example doc.
-
+对应视频分 P 为 p18~27。
