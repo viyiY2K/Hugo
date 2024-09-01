@@ -1,10 +1,10 @@
 ---
-title: Nobody
+title: Nobady
 description: YOU LIFE IS THE RESULT OF YOUR OWN DECISIONS
 toc: true
 categories: 
 date: 2024-06-15
-lastmod: 2024-06-15
+lastmod: 2024-09-01
 ---
 
 并没有什么好介绍的，一句两句聊不清楚无常的生命，但还是按照惯例写点什么。
@@ -13,7 +13,7 @@ lastmod: 2024-06-15
 
 ## 🙎‍♀️ 关于我
 
-INFJ，挺不来事一女的。想成为马猴烧酒，想活在真实世界，想茁壮成长，目前在 [@先看评测](https://space.bilibili.com/483311105) 当运营。
+[INFJ](https://www.16personalities.com/infj-personality)，挺不来事一女的。想成为马猴烧酒，想活在真实世界，想茁壮成长。努力消灭文盲，填充[赛博图书馆](https://viyi.notion.site/4cfa23550f3b4865bbfb7c31dd98ef78?v=46fe101b8d31419dbca4c53babf6a19d)中。目前在 [@先看评测](https://space.bilibili.com/483311105) 当运营。
 
 ## ✍️ 关于博客
 
