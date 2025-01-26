@@ -22,5 +22,5 @@ main:
     url: '/about_me/'
     weight: 5
 #  - name: CCCS
-#    url: /docs/
+#    url: 'cccs.viyi.cc'
 #    weight: 6
