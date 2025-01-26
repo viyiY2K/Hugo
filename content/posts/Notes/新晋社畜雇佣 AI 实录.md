@@ -1,11 +1,11 @@
 ---
 url: a_record_of_the_new_burnout_worker_hiring_ai
 title: 新晋社畜雇佣 AI 实录
-toc: false
+toc: true
 authors: viyi
 tags:
   - AI
-  - 编程
+  - Python
 categories:
   - 札记
 description: 本文记录了一位绝望的社畜利用 AI 完成琐碎事项的自动化过程。
@@ -33,9 +33,9 @@ lastmod: 2025-01-26
 
 这篇文章并不是为了抱怨这份工作，尽管我对这些琐碎的工作内容感到厌烦，但还是试图做点什么让它不那么无聊，比如利用自动化工具。
 
-# 定时转播视频数据
+## 定时转播视频数据
 
-## 自动化获取数据
+### 自动化获取数据
 
 为了避免重复造轮子，先做点简单的调研。如果在搜索引擎查询「社媒矩阵管理」，能够查询到许多工具。这些都是 To B 的服务商，很显然，被雇佣的我大概率比这些工具便宜(。
 
@@ -52,15 +52,15 @@ import asyncio
 from bilibili_api import video
 
 async def main() -> None:
-    # 提示用户输入 BV 号
+    ## 提示用户输入 BV 号
     bvid = input("请输入 bilibili 视频的 BV 号：")
     
-    # 实例化 Video 类
+    ## 实例化 Video 类
     v = video.Video(bvid=bvid)
-    # 获取信息
+    ## 获取信息
     info = await v.get_info()
     
-    # 筛选并输出所需信息
+    ## 筛选并输出所需信息
     output = {
         '标题'：info['title']，
         'BV 号': info['bvid'],
@@ -89,9 +89,9 @@ import yt_dlp
 
 def get_video_info(video_url):
     ydl_opts = {
-        'quiet': True,  # 关闭输出
-        'format': 'best',  # 获取最佳格式
-        'noplaylist': True,  # 不下载播放列表
+        'quiet': True,  ## 关闭输出
+        'format': 'best',  ## 获取最佳格式
+        'noplaylist': True,  ## 不下载播放列表
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
@@ -103,7 +103,7 @@ def get_video_info(video_url):
 
         return title, view_count, like_count, comment_count
 
-video_url = "<https://www.youtube.com/watch?v=>"  # 替换为需要的视频链接
+video_url = "<https://www.youtube.com/watch?v=>"  ## 替换为需要的视频链接
 title, views, likes, comments = get_video_info(video_url)
 
 print(f"标题: {title}")
@@ -122,23 +122,23 @@ print(f"评论数: {comments}")
 def get_video_url(self, weibo_info):
     """获取微博视频url和播放量"""
     video_url = ""
-    play_count = 0  # 新增播放量变量
+    play_count = 0  ## 新增播放量变量
 
     if weibo_info.get("page_info"):
         media_info = weibo_info["page_info"].get("urls") or weibo_info["page_info"].get("media_info")
 
-        # print("Weibo Info:", weibo_info)  
-        # print("Media Info:", media_info)  
+        ## print("Weibo Info:", weibo_info)  
+        ## print("Media Info:", media_info)  
         
         if media_info and weibo_info["page_info"].get("type") == "video":
             video_url = media_info.get("mp4_720p_mp4")
 
-            # 从 page_info 中获取播放量
+            ## 从 page_info 中获取播放量
             play_count_str = weibo_info["page_info"].get("play_count", "0次播放")
-            # 提取数字部分
-            # 把字符串转换为整数 play_count = int(play_count_str.replace("次播放", "").replace("万", "0000").replace("万次播放", "0000").replace("次", ""))
+            ## 提取数字部分
+            ## 把字符串转换为整数 play_count = int(play_count_str.replace("次播放", "").replace("万", "0000").replace("万次播放", "0000").replace("次", ""))
             match = re.search(r'\\d+', play_count_str)
-            play_count = int(match.group()) if match else 0  # 如果找到数字，则转换为整数，否则为 0
+            play_count = int(match.group()) if match else 0  ## 如果找到数字，则转换为整数，否则为 0
 
             print("Video URL:", video_url)  
             print("Play Count:", play_count)  
@@ -152,7 +152,7 @@ Weibo Spider 是根据微博用户 id 访问主页并依序逐条提取微博数
 
 ```python
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+## -*- coding: utf-8 -*-
 
 import argparse
 import requests
@@ -161,7 +161,7 @@ from datetime import datetime
 import logging
 import urllib3
 
-# 禁用 SSL 警告
+## 禁用 SSL 警告
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def get_single_weibo(weibo_id, headers=None):
@@ -183,7 +183,7 @@ def get_single_weibo(weibo_id, headers=None):
         weibo_info = js.get("status")
         
         if weibo_info:
-            # 提取基本信息
+            ## 提取基本信息
             weibo = {
                 'id': weibo_info['id'],
                 'screen_name': weibo_info['user']['screen_name'],
@@ -194,7 +194,7 @@ def get_single_weibo(weibo_id, headers=None):
                 'created_at': weibo_info['created_at']
             }
             
-            # 获取视频信息
+            ## 获取视频信息
             if weibo_info.get("page_info"):
                 page_info = weibo_info["page_info"]
                 if page_info.get("type") == "video":
@@ -216,7 +216,7 @@ def main():
     
     weibo_info = get_single_weibo(args.id)
     if weibo_info:
-        # 输出微博信息到命令行
+        ## 输出微博信息到命令行
         print(f"用户: {weibo_info['screen_name']}")
         print(f"创建时间: {weibo_info['created_at']}")
         print(f"内容: {weibo_info['text']}")
@@ -243,7 +243,7 @@ if __name__ == "__main__":
 
 你看，世上无难事，只要肯放弃(。本想偷个懒以项目为单位获取全平台的播放量数据，结果转了一圈下来四处撞墙。事已至此，还是先把基本流程跑通，给这件事画个句号。
 
-## 飞书 WebHook
+### 飞书 WebHook
 
 bilibili、YouTube 和微博的数据获取已经解决，主要的长视频平台左右也就这俩(仨)，接下来解决定时转播数据的需求，再拆解其实是两个问题——信息传递和定时任务。如果有需要，还可以带上个数据存储，毕竟阿 B 后台并不提供固定周期的数据对比功能。
 
@@ -265,39 +265,39 @@ from datetime import datetime
 from bilibili_api import video
 import requests
 
-# 配置日志
+## 配置日志
 logging.basicConfig(
-    level=logging.INFO,  # 日志级别
-    format='%(asctime)s - %(levelname)s - %(message)s',  # 日志格式
+    level=logging.INFO,  ## 日志级别
+    format='%(asctime)s - %(levelname)s - %(message)s',  ## 日志格式
     handlers=[
-        logging.FileHandler("video_monitor.log"),  # 日志文件
-        logging.StreamHandler()  # 控制台输出
+        logging.FileHandler("video_monitor.log"),  ## 日志文件
+        logging.StreamHandler()  ## 控制台输出
     ]
 )
 
-# 飞书 Webhook URL
-FEISHU_WEBHOOK_URL = '<https://open.feishu.cn/open-apis/bot/>'  # 输入飞书 Bot url
+## 飞书 Webhook URL
+FEISHU_WEBHOOK_URL = '<https://open.feishu.cn/open-apis/bot/>'  ## 输入飞书 Bot url
 
-# 设置命令行参数
+## 设置命令行参数
 parser = argparse.ArgumentParser(description='Monitor Bilibili video.')
 parser.add_argument('bv_id', type=str, help='The BV ID of the video to monitor.')
 args = parser.parse_args()
 
 async def fetch_video_data(bvid: str) -> None:
-    # 实例化 Video 类
-    v = video.Video(bvid=bvid)  # 使用传入的 BV 号
-    # 获取信息
+    ## 实例化 Video 类
+    v = video.Video(bvid=bvid)  ## 使用传入的 BV 号
+    ## 获取信息
     info = await v.get_info()
 
-    # 获取视频发布时间
+    ## 获取视频发布时间
     pub_time_str = info['pubdate']  
     pub_time = datetime.fromtimestamp(pub_time_str)  
 
-    # 计算当前时间和视频发布时间的差值
+    ## 计算当前时间和视频发布时间的差值
     now = datetime.now()
     time_diff = now - pub_time
 
-    # 获取统计信息
+    ## 获取统计信息
     name = info['owner']['name']
     views = info['stat']['view']
     likes = info['stat']['like']
@@ -307,12 +307,12 @@ async def fetch_video_data(bvid: str) -> None:
     shares = info['stat']['share']
     danmaku_count = info['stat']['danmaku']
 
-    # 计算互动总数、互动占比和投币占比
+    ## 计算互动总数、互动占比和投币占比
     interaction_total = likes + replies + coins + favorites + shares + danmaku_count
-    interaction_ratio = (interaction_total / views) * 100 if views > 0 else 0  # 避免除以零
-    coin_ratio = (coins / interaction_total) * 100 if interaction_total > 0 else 0  # 避免除以零
+    interaction_ratio = (interaction_total / views) * 100 if views > 0 else 0  ## 避免除以零
+    coin_ratio = (coins / interaction_total) * 100 if interaction_total > 0 else 0  ## 避免除以零
 
-    # 构建飞书卡片消息格式
+    ## 构建飞书卡片消息格式
     card_message = {
         "msg_type": "interactive",
         "card": {
@@ -322,9 +322,9 @@ async def fetch_video_data(bvid: str) -> None:
             "header": {
                 "title": {
                     "tag": "plain_text",
-                    "content": f"{info['owner']['name']} | {info['title']}"  # 修改消息头
+                    "content": f"{info['owner']['name']} | {info['title']}"  ## 修改消息头
                 },
-                "template": "orange"  # 设置标题主题颜色
+                "template": "orange"  ## 设置标题主题颜色
             },
             "elements": [
                 {
@@ -338,24 +338,24 @@ async def fetch_video_data(bvid: str) -> None:
         }
     }
 
-    # 发送消息到飞书
+    ## 发送消息到飞书
     await send_to_feishu(card_message)
 
 async def send_to_feishu(data):
     requests.post(FEISHU_WEBHOOK_URL, json=data)
 
-# 主函数
+## 主函数
 async def main():
-    await fetch_video_data(args.bv_id)  # 使用命令行参数中的 BV ID
+    await fetch_video_data(args.bv_id)  ## 使用命令行参数中的 BV ID
 
-# 执行主函数
+## 执行主函数
 if __name__ == "__main__":
     asyncio.run(main())
 ```
 
 实际接收到消息的效果是这样的：
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5c2be19-2944-4b6e-8848-7a312a4202f9/f2912ee8-5906-43f7-961e-492233a743f0/image.png)
+![1737881422761.png](https://zyin-1309341307.cos.ap-nanjing.myqcloud.com/note/1737881422761.png)
 
 如果你像我一样要运营多个矩阵号，还可以顺手修改下颜色方便辨识，加上个变量即可：
 
@@ -364,33 +364,33 @@ if __name__ == "__main__":
 template_color = "purple" if info['owner']['name'] == "账号名1" else "carmine" if info['owner']['name'] == "账号名2" else "orange"
 
 #记得把消息格式里的 template 也改下。
-"template": template_color  # 设置标题主题颜色
+"template": template_color  ## 设置标题主题颜色
 ```
 
 如果希望以 7 天为周期横向对比各个视频的数据表现，那还可以加入下面这段代码，这样它就会在第七天保存当时的数据进入 bilibili_7-Day.csv 的文件中。
 
 ```python
-# 在文件开头添加
+## 在文件开头添加
 from pathlib import Path
 import csv
 
-# 在 fetch_video_data 函数开始处添加数据目录设置
+## 在 fetch_video_data 函数开始处添加数据目录设置
 def ensure_data_dir():
-    # 在脚本所在目录创建 data 文件夹
+    ## 在脚本所在目录创建 data 文件夹
     data_dir = Path(__file__).parent / 'data'
     data_dir.mkdir(exist_ok=True)
     return data_dir
 
-# 在 fetch_video_data 函数中修改CSV相关代码
-    # 检查是否为第7天
+## 在 fetch_video_data 函数中修改CSV相关代码
+    ## 检查是否为第7天
     days_diff = time_diff.days
     if days_diff == 7:
-        # 准备CSV文件
+        ## 准备CSV文件
         data_dir = ensure_data_dir()
         csv_file = data_dir / 'bilibili_7-Day.csv'
         file_exists = csv_file.exists()
         
-        # 准备要写入的数据
+        ## 准备要写入的数据
         headers = ['视频标题', '发布时间', '当前时间', '播放量', '互动总数', 
                   '点赞数', '评论数', '投币数', '收藏数', '转发数', '弹幕数']
         row_data = [
@@ -407,7 +407,7 @@ def ensure_data_dir():
             danmaku_count
         ]
         
-        # 写入CSV文件
+        ## 写入CSV文件
         with open(csv_file, 'a', newline='', encoding='utf-8-sig') as f:
             writer = csv.writer(f)
             if not file_exists:
@@ -417,7 +417,7 @@ def ensure_data_dir():
         logging.info(f"已将第7天数据写入 {csv_file}: {info['title']}")
 ```
 
-## 定时执行脚本任务
+### 定时执行脚本任务
 
 能成功写入第 7 天数据的前提是，我们需要在第 7 天的时候运行它，这就涉及到定时任务了。
 
@@ -427,7 +427,7 @@ def ensure_data_dir():
 
 常规的教程只说了”将所需要运行的脚本路径填入即可“，但它一直无法按预期运行定时任务。几经周折后终于在某个角落（一篇名为「[windows设置定时执行脚本](https://www.cnblogs.com/sui776265233/p/13602893.html)」的文章）里查到，其实需要在启动程序的那部分，先填入 Python.exe 的绝对路径，并在可选的两个参数中，填入 Python 脚本路径和解释器路径。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5c2be19-2944-4b6e-8848-7a312a4202f9/f9aa76cc-ac07-4be2-aed2-8d09e4a23614/image.png)
+![1737881461733.png](https://zyin-1309341307.cos.ap-nanjing.myqcloud.com/note/1737881461733.png)
 
 尽管这位[迎风而来的小随](https://www.cnblogs.com/sui776265233)在 2021 年停止了博客的更新，但还是由衷地感谢 ta 的文章解决了我的小问题。这就是我现在依旧更喜欢文字、更喜欢网页，并且无比痛恨死链的原因。
 
@@ -445,7 +445,7 @@ C:\\Windows\\System32\\schtasks.exe /create /tn "测试" `
 
 至此，看似简单实则并没那么简单的转播数据需求，算是完成了。
 
-# 数据汇总录入
+## 数据汇总录入
 
 当我向老板娘表示这个 Bot 可以实现定时播报数据情况，可以把它配置到群聊的时候，新的需求又来了。同理可得，AI 并不会让人失业，只会让预期可实现的需求越变越多。
 
@@ -459,13 +459,13 @@ C:\\Windows\\System32\\schtasks.exe /create /tn "测试" `
 
 只是手动下载 7 个平台的数据再提供 2 个链接，显然比之前逐个汇总那么多表项来得可以接受。于是对外汇总数据的 1.0 版本非常简单粗暴，筛选固定路径里的文件，根据平台名找到对应文件，然后匹配和检索关键词一致的行，复制表头和该行数据到新文件中。
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5c2be19-2944-4b6e-8848-7a312a4202f9/a256c4a0-ebee-4737-898a-73f96c485e07/image.png)
+![1737881485152.png](https://zyin-1309341307.cos.ap-nanjing.myqcloud.com/note/1737881485152.png)
 
 至于为什么区分出了 1.0 版本，因为总是会有新的要求，[Scope Creep](https://en.wikipedia.org/wiki/Scope_creep) 永远正确，被困住的只有牛马🚬。有些甲方对表头的要求是指定的，于是 2.0 版本用了更通用的匹配方式，也让输出更加规整。
 
 最终的输出将会是：
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/d5c2be19-2944-4b6e-8848-7a312a4202f9/147ce811-9a1c-439c-9a95-0f6cb9b21e28/image.png)
+![1737881509051.png](https://zyin-1309341307.cos.ap-nanjing.myqcloud.com/note/1737881509051.png)
 
 具体的实现如下：
 
@@ -482,11 +482,11 @@ import requests
 import json
 import logging
 
-# 配置日志
+## 配置日志
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# 禁用 SSL 警告
+## 禁用 SSL 警告
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def format_youtube_date(date_str):
@@ -585,7 +585,7 @@ def get_single_weibo(weibo_id, headers=None):
         weibo_info = js.get("status")
         
         if weibo_info:
-            # 获取播放量
+            ## 获取播放量
             play_count = 0
             if weibo_info.get("page_info"):
                 page_info = weibo_info["page_info"]
@@ -593,7 +593,7 @@ def get_single_weibo(weibo_id, headers=None):
                     play_count_str = page_info.get("play_count", "0")
                     play_count = convert_play_count(play_count_str)
             
-            # 格式化返回数据，与原有输出列保持一致
+            ## 格式化返回数据，与原有输出列保持一致
             weibo = {
                 '平台': '微博',
                 '标题': weibo_info['text'],
@@ -625,17 +625,17 @@ def match_column(df, target_columns):
     return None
 
 def process_files(search_keyword, input_dir=None, sub_folder=None):
-    # 如果没有提供输入目录，使用默认路径
+    ## 如果没有提供输入目录，使用默认路径
     if input_dir is None:
         today = datetime.now().strftime("%Y-%m-%d")
         input_dir = os.path.join('G:\\\\zdh\\\\platformdata', today)
         if sub_folder:
             input_dir = os.path.join(input_dir, sub_folder)
     
-    # 平台处理顺序
+    ## 平台处理顺序
     platform_order = ['bilibili', '抖音', '小红书', '公众号', '视频号', '快手', '头条号']
     
-    # 输出列及其可能的列名
+    ## 输出列及其可能的列名
     output_columns = {
         '平台': '',
         '标题': '作品/标题/描述',
@@ -648,13 +648,13 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         '收藏': '收藏'
     }
     
-    # 输出目录和文件名
+    ## 输出目录和文件名
     output_dir = 'G:\\\\zdh\\\\to_party_a'
     os.makedirs(output_dir, exist_ok=True)
     output_filename = f'output_{datetime.now().strftime("%Y%m%d%H%M%S")}.xlsx'
     output_file_path = os.path.join(output_dir, output_filename)
     
-    # 获取所有输入文件，按指定顺序排序
+    ## 获取所有输入文件，按指定顺序排序
     input_files = [
         os.path.join(input_dir, f) 
         for f in os.listdir(input_dir)
@@ -663,10 +663,10 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         and not f.startswith('.')
     ]
     
-    # 按平台顺序排序
+    ## 按平台顺序排序
     input_files.sort(key=lambda x: next((i for i, p in enumerate(platform_order) if p in os.path.basename(x)), len(platform_order)))
     
-    # 初始化输出行
+    ## 初始化输出行
     output_rows = [list(output_columns.keys())]
     
     for file_path in input_files:
@@ -675,7 +675,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         print(f"\\n正在处理文件: {filename}")
         
         try:
-            # 读取文件
+            ## 读取文件
             if file_path.endswith('.csv'):
                 df = pd.read_csv(file_path, encoding='utf-8-sig')
             elif file_path.endswith('.xls'):
@@ -689,17 +689,17 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
             print(f"文件列名: {list(df.columns)}")
             print(f"文件行数: {len(df)}")
             
-            # 在第一列中搜索关键词
+            ## 在第一列中搜索关键词
             matched_rows = df[df.iloc[:, 0].astype(str).str.contains(search_keyword, case=False, na=False)]
             
             if not matched_rows.empty:
                 print(f"找到 {len(matched_rows)} 行匹配数据")
                 
                 for _, row in matched_rows.iterrows():
-                    # 创建新行
+                    ## 创建新行
                     new_row = [platform]
                     
-                    # 匹配其他列
+                    ## 匹配其他列
                     for col_name, possible_names in list(output_columns.items())[1:]:
                         if possible_names:
                             matched_col = match_column(df, possible_names)
@@ -716,7 +716,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
             print(f"处理文件 {filename} 时出错: {e}")
             traceback.print_exc()
     
-    # 询问微博和 YouTube 链接
+    ## 询问微博和 YouTube 链接
     print("\\n请输入微博链接（以空格分隔，没有则直接回车）:")
     weibo_links = input().split()
     
@@ -734,30 +734,30 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         if youtube_data:
             output_rows.append(youtube_data)
     
-    # 保存输出文件
+    ## 保存输出文件
     output_df = pd.DataFrame(output_rows[1:], columns=output_rows[0])
     output_df.to_excel(output_file_path, index=False)
     print(f"\\n匹配结果已保存到: {output_file_path}")
 
-# 主程序入口
+## 主程序入口
 if __name__ == '__main__':
-    # 检查命令行参数
+    ## 检查命令行参数
     if len(sys.argv) < 2:
         print("用法: python 脚本.py <搜索关键词> [子文件夹]")
         sys.exit(1)
     
-    # 获取命令行参数
+    ## 获取命令行参数
     search_keyword = sys.argv[1]
     sub_folder = sys.argv[2] if len(sys.argv) > 2 else None
     
-    # 调用处理函数
+    ## 调用处理函数
     process_files(search_keyword, sub_folder=sub_folder)
 ```
 
 如果需要增删输出中的列，只需要修改这里的代码：
 
 ```python
-    # 输出列及其可能的列名
+    ## 输出列及其可能的列名
     output_columns = {
         '平台': '',
         '标题': '作品/标题/描述',
@@ -782,25 +782,25 @@ import glob
 from datetime import datetime
 
 def process_files(search_keyword, input_dir=None, sub_folder=None):
-    # 输出路径和文件名
+    ## 输出路径和文件名
     output_dir = r'G:\\zdh\\data'
-    os.makedirs(output_dir, exist_ok=True)  # 确保目录存在
+    os.makedirs(output_dir, exist_ok=True)  ## 确保目录存在
 
-    # 如果没有提供输入目录，使用默认路径
+    ## 如果没有提供输入目录，使用默认路径
     if input_dir is None:
         today = datetime.now().strftime("%Y-%m-%d")
         input_dir = os.path.join('G:\\\\zdh\\\\platformdata', today)
         if sub_folder:
             input_dir = os.path.join(input_dir, sub_folder)
 
-    # 输出文件
+    ## 输出文件
     output_file = os.path.join(output_dir, f'Douyin_Daily.xlsx')
     
-    # 创建或读取输出文件
+    ## 创建或读取输出文件
     try:
         df_output = pd.read_excel(output_file)
     except FileNotFoundError:
-        # 如果文件不存在，创建一个带有预定义列的空DataFrame
+        ## 如果文件不存在，创建一个带有预定义列的空DataFrame
         columns = [
             '作品名称', '发布时间', '体裁', '审核状态', '播放量', '完播率', '5s完播率', 
             '封面点击率', '2s跳出率', '平均播放时长', '点赞量', '分享量', '评论量', 
@@ -812,7 +812,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         ]
         df_output = pd.DataFrame(columns=columns)
 
-    # 按顺序处理不同平台文件
+    ## 按顺序处理不同平台文件
     platforms = [
         {'name': '抖音', 'filename': '*抖音*.xlsx', 'search_column': 0, 'header': 0, 'data_columns': [
             '作品名称', '发布时间', '体裁', '审核状态', '播放量', '完播率', '5s完播率', 
@@ -838,11 +838,11 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         ]}
     ]
 
-    # 创建一个新的空行用于存储数据
+    ## 创建一个新的空行用于存储数据
     new_row = pd.DataFrame(columns=df_output.columns)
 
     for platform in platforms:
-        # 处理可能的多个文件名模式
+        ## 处理可能的多个文件名模式
         filenames = platform['filename'] if isinstance(platform['filename'], list) else [platform['filename']]
         
         matched_file = None
@@ -856,7 +856,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
         
         if matched_file:
             try:
-                # 根据文件类型读取
+                ## 根据文件类型读取
                 if matched_file.endswith('.xlsx'):
                     df = pd.read_excel(matched_file, header=platform['header'])
                 elif matched_file.endswith('.csv'):
@@ -865,7 +865,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
                 print(f"读取文件 {matched_file} 时发生错误：{e}")
                 continue
             
-            # 搜索关键词
+            ## 搜索关键词
             try:
                 matched_rows = df[df.iloc[:, platform['search_column']].str.contains(search_keyword, na=False)]
             except:
@@ -874,7 +874,7 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
             if not matched_rows.empty:
                 row = matched_rows.iloc[0]
                 
-                # 根据平台特定列名提取数据
+                ## 根据平台特定列名提取数据
                 for col_info in platform['data_columns']:
                     if isinstance(col_info, dict):
                         source_column = col_info['source_column']
@@ -885,16 +885,16 @@ def process_files(search_keyword, input_dir=None, sub_folder=None):
                             col_index = df.columns.get_loc(col_info)
                             new_row.loc[0, col_info] = row.iloc[col_index]
 
-    # 如果找到了数据，添加到输出DataFrame
+    ## 如果找到了数据，添加到输出DataFrame
     if not new_row.empty and not new_row.loc[0].isnull().all():
         df_output = pd.concat([df_output, new_row], ignore_index=True)
 
-    # 保存结果
+    ## 保存结果
     df_output.to_excel(output_file, index=False)
     print(f"数据处理完成，结果已保存到 {output_file}")
     return df_output
 
-# 使用示例
+## 使用示例
 if __name__ == "__main__":
     keyword = input("请输入要检索的关键词：")
     result = process_files(keyword)
@@ -902,15 +902,15 @@ if __name__ == "__main__":
 
 ```
 
-# 评论区监测
+## 评论区监测
 
-好的，如果你看到这里，估计已经忘记我一开始还有个需求是监测评论来着。只是筛选评论区并转播倒是不难，感谢 [https://github.com/Nemo2011/bilibili-api](https://github.com/Nemo2011/bilibili-api) 。
+好的，如果你看到这里，估计已经忘记我一开始还有个需求是监测评论来着。只是筛选评论区并转播倒是不难，感谢 [bilibili-api](https://github.com/Nemo2011/bilibili-api)。
 
 目前的进度是已经可以读取到所有的评论（包括副楼）保存到表格，还加了简单的筛选词，筛选出的评论可以通过带有 rpid 的直链跳转处理，再加个 WebHook 基本能凑合用，不过一直没空摸鱼把它加上……然后就放假了！
 
 这个版本的缺点是如果定时任务设得比较紧凑，IP 会暂时被封禁无法 work，这个应该可以设置代理绕过。
 
-现在「设置关键词筛选 -> 给直链跳转删除」比起之前「逐条翻评论 -> 定向删除」来得方便，不过理论上还可以在飞书消息[加个交互](https://open.feishu.cn/document/uAjLw4CM/ukzMukzMukzM/feishu-cards/configuring-card-interactions)，结合 [**async def delete()](https://nemo2011.github.io/bilibili-api/#/modules/comment?id=async-def-delete)** 就可以直接一键删除，不用二次跳转网页。
+现在「设置关键词筛选 -> 给直链跳转删除」比起之前「逐条翻评论 -> 定向删除」来得方便，不过理论上还可以在飞书消息[加个交互](https://open.feishu.cn/document/uAjLw4CM/ukzMukzMukzM/feishu-cards/configuring-card-interactions)，结合 [async def delete()](https://nemo2011.github.io/bilibili-api/#/modules/comment?id=async-def-delete) 就可以直接一键删除，不用二次跳转网页。
 
 是的，这里又要有但是了，账号会需要在浏览器长期登录账户以便投稿，这样会导致 Cookies 被刷新……。总之，以下是再凑合一下的版本：
 
@@ -925,7 +925,7 @@ import sys
 import logging
 import argparse
 
-# 配置日志
+## 配置日志
 def setup_logging(bvid):
     log_dir = os.path.join(r'G:\\zdh\\data\\comments', bvid)
     os.makedirs(log_dir, exist_ok=True)
@@ -938,7 +938,7 @@ def setup_logging(bvid):
         filemode='a'
     )
 
-# 定义时间记录文件路径
+## 定义时间记录文件路径
 def get_last_run_file(bvid):
     return os.path.join(r'G:\\zdh\\data\\comments', bvid, 'last_run_time.txt')
 
@@ -948,19 +948,19 @@ def read_last_run_time(bvid):
     if os.path.exists(last_run_file):
         with open(last_run_file, 'r') as f:
             lines = f.readlines()
-            # 如果文件不为空，返回最后一行的时间戳
+            ## 如果文件不为空，返回最后一行的时间戳
             return int(lines[-1].split()[0]) if lines else 0
-    return 0  # 如果文件不存在，返回0表示获取所有评论
+    return 0  ## 如果文件不存在，返回0表示获取所有评论
 
 def write_last_run_time(bvid, timestamp):
     """写入本次运行时间"""
     last_run_file = get_last_run_file(bvid)
-    # 转换时间戳为可读格式
+    ## 转换时间戳为可读格式
     readable_time = datetime.fromtimestamp(timestamp).strftime('%Y/%m/%d %H:%M')
     
     with open(last_run_file, 'a') as f:
-        # 写入时间戳和可读时间
-        f.write(f"{timestamp} # {readable_time}\\n")
+        ## 写入时间戳和可读时间
+        f.write(f"{timestamp} ## {readable_time}\\n")
 
 def flatten_comment(comment, bvid):
     """展平单个评论"""
@@ -991,15 +991,15 @@ def extract_comments(comments, bvid, last_run_time):
     """
     all_comments = []
     for comment in comments:
-        # 检查评论时间是否在上次运行之后
+        ## 检查评论时间是否在上次运行之后
         if comment["ctime"] > last_run_time:
             flattened = flatten_comment(comment, bvid)
             if flattened:
                 all_comments.append(flattened)
         
-        # 递归处理子评论
+        ## 递归处理子评论
         if "replies" in comment and comment["replies"]:
-            # 递归时传入 last_run_time
+            ## 递归时传入 last_run_time
             child_comments = extract_comments(comment["replies"], bvid, last_run_time)
             all_comments.extend(child_comments)
     
@@ -1023,11 +1023,11 @@ async def get_new_comments(bvid, last_run_time):
             if not replies:
                 break
             
-            # 检查当前页是否还有新的评论
+            ## 检查当前页是否还有新的评论
             new_comments = [r for r in replies if r["ctime"] > last_run_time]
             comments.extend(new_comments)
             
-            # 如果没有新评论或已经到最后一页，退出
+            ## 如果没有新评论或已经到最后一页，退出
             if not new_comments or page > c['page']['count'] // c['page']['size'] + 1:
                 break
             
@@ -1047,15 +1047,15 @@ def append_to_excel(new_df, bvid):
     filename = os.path.join(r'G:\\zdh\\data\\comments', bvid, f'{bvid}_comments.xlsx')
     
     try:
-        # 如果文件存在，读取现有数据
+        ## 如果文件存在，读取现有数据
         if os.path.exists(filename):
             existing_df = pd.read_excel(filename)
             
-            # 去重
+            ## 去重
             combined_df = pd.concat([existing_df, new_df]).drop_duplicates(subset=['rpid'])
             combined_df.to_excel(filename, index=False)
         else:
-            # 如果文件不存在，直接保存
+            ## 如果文件不存在，直接保存
             new_df.to_excel(filename, index=False)
         
         logging.info(f"数据已成功保存到 {filename}")
@@ -1063,39 +1063,39 @@ def append_to_excel(new_df, bvid):
         logging.error(f"保存Excel文件时出错: {e}")
 
 async def main(bvid):
-    # 设置日志
+    ## 设置日志
     setup_logging(bvid)
     
     try:
-        # 读取上次运行时间
+        ## 读取上次运行时间
         last_run_time = read_last_run_time(bvid)
         logging.info(f"上次运行时间: {last_run_time}")
         
-        # 获取新评论
+        ## 获取新评论
         new_video_comments = await get_new_comments(bvid, last_run_time)
         
-        # 展平并提取新评论
+        ## 展平并提取新评论
         flattened_comments = extract_comments(new_video_comments, bvid, last_run_time)
         
-        # 打印总新评论数
+        ## 打印总新评论数
         logging.info(f"共获取到 {len(flattened_comments)} 条新评论")
         
-        # 筛选包含关键词的评论
+        ## 筛选包含关键词的评论
         filtered_comments = [
             comment for comment in flattened_comments 
             if any(keyword in comment['message'] for keyword in FILTER_KEYWORDS)
         ]
         
-        # 记录关键词评论
+        ## 记录关键词评论
         logging.info(f"包含关键词的评论共 {len(filtered_comments)} 条")
         
-        # 转换为 DataFrame
+        ## 转换为 DataFrame
         df = pd.DataFrame(flattened_comments)
         
-        # 导出到 xlsx 文件，使用追加模式
+        ## 导出到 xlsx 文件，使用追加模式
         append_to_excel(df, bvid)
         
-        # 记录本次运行时间
+        ## 记录本次运行时间
         current_timestamp = int(datetime.now().timestamp())
         write_last_run_time(bvid, current_timestamp)
         logging.info(f"本次运行时间已记录: {current_timestamp}")
@@ -1103,7 +1103,7 @@ async def main(bvid):
     except Exception as e:
         logging.error(f"脚本执行出错: {e}", exc_info=True)
 
-# 添加依赖检查
+## 添加依赖检查
 try:
     import bilibili_api
     import pandas as pd
@@ -1113,14 +1113,14 @@ except ImportError as e:
     sys.exit(1)
 
 if __name__ == "__main__":
-    # 设置命令行参数解析
+    ## 设置命令行参数解析
     parser = argparse.ArgumentParser(description='bilibili评论爬取脚本')
     parser.add_argument('bvid', help='要爬取评论的视频BV号')
     
-    # 解析参数
+    ## 解析参数
     args = parser.parse_args()
     
-    # 实例化 Credential
+    ## 实例化 Credential
     credential = Credential(
         sessdata="your_sessdata",
         bili_jct="your_bili_jct",
@@ -1129,14 +1129,14 @@ if __name__ == "__main__":
         ac_time_value="your_ac_time_value"
     )
 
-    # 定义关键词列表
+    ## 定义关键词列表
     FILTER_KEYWORDS = ['恰饭', '恰', '广告', '推广', '剪辑', '调色', '字幕']
 
-    # 运行主程序
+    ## 运行主程序
     asyncio.run(main(args.bvid))
 ```
 
-# 写在最后
+## 写在最后
 
 “如果我能明白这究竟是怎么回事就好了”，通常这个想法会出现在最后 30% 的实现上。诚然，如果没有 AI，我绝无可能把这些琐碎的工作用 Python 解决掉，但它的表现依旧差口气。
 
