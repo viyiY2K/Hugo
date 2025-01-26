@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
-                "mode": "preview",
+                "file": "content/posts/Thoughts/再搭博客记.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Notes/重学打字.md",
+                "file": "content/posts/Thoughts/再搭博客记.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Notes/重学打字.md"
+                "file": "content/posts/Thoughts/再搭博客记.md"
               }
             }
           }
@@ -156,8 +155,28 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "3c4167270bbbed54",
+  "active": "63709bd37d292df7",
   "lastOpenFiles": [
+    "public/tags/编程/page/1/index.html",
+    "public/tags/编程/page/1",
+    "public/tags/编程/page",
+    "public/tags/编程/index.xml",
+    "public/tags/编程/index.html",
+    "public/tags/编程",
+    "public/tags/ai/page/1/index.html",
+    "public/tags/ai/page/1",
+    "public/tags/ai/page",
+    "public/tags/ai/index.xml",
+    "public/tags/ai/index.html",
+    "content/posts/新晋社畜雇佣 AI 实录.md",
+    "content/posts/Notes/新晋社畜雇佣 AI 实录.md",
+    "content/posts/Thoughts/再搭博客记.md",
+    "content/posts/Notes/初搭博客记.md",
+    "content/posts/Notes/从零开始.md",
+    "content/posts/Notes/使用 SSH 连接 Github 受锤记.md",
+    "content/posts/Notes/卡片盒笔记到底是什么？.md",
+    "content/posts/CPTSD/思考病躯.md",
+    "content/posts/Notes/重学打字.md",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 9%3A日 16%3A时 54%3A分 32%3A秒 eiqzf4f3za1673254472039.png",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 19%3A时 29%3A分 26%3A秒 gnrhs34n881673090966266.png",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 19%3A时 18%3A分 36%3A秒 lzrx6mi9nu1673090315821.png",
@@ -168,7 +187,6 @@
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 16%3A时 51%3A分 02%3A秒 vuunik1yzs1673081462614.png",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 16%3A时 34%3A分 30%3A秒 vh516h50ga1673080470371.png",
     "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 16%3A时 25%3A分 41%3A秒 g1at8wiorr1673079941760.png",
-    "content/docs/computer_organization_principles/assets/{2023%3A年 1%3A月 7%3A日 16%3A时 19%3A分 59%3A秒 r4n03hbow51673079598873.png",
     "content/docs/programming/_index.md",
     "content/docs/programming/2.7 软件工程（Software Engineering）.md",
     "content/docs/programming/2.6 阿兰·图灵（Alan Turing）.md",
@@ -184,25 +202,6 @@
     "content/docs/operating_system/3.6 屏幕 & 2D 图形显示 - Screens & 2D Graphics.md",
     "content/docs/operating_system/3.5 人机交互（Human-Computer Interaction）.md",
     "content/docs/operating_system/3.4 压缩（Compression）.md",
-    "content/docs/operating_system/3.3 文件系统（Files & File Systems）.md",
-    "content/docs/operating_system/3.2 内存 & 储存介质（Memory & Storage）.md",
-    "content/docs/operating_system/3.10 3D 图形（3D Graphics）.md",
-    "content/docs/extended_discussion/_index.md",
-    "content/docs/extended_discussion/5.6 教育型科技 (Educational Technology).md",
-    "content/docs/extended_discussion/5.7 奇点，天网，计算机的未来(The Singularity, Skynet, and the Future of Computing).md",
-    "content/docs/operating_system/3.1 操作系统（Operating Systems）.md",
-    "content/docs/extended_discussion/5.5 计算机中的心理学 (Psychology of Computing).md",
-    "content/docs/extended_discussion/5.4 机器人 (Robots).md",
-    "content/docs/extended_discussion/5.3 自然语言处理 (Natural Language Processing).md",
-    "content/docs/computer_organization_principles/assets",
-    "content/docs/programming",
-    "content/docs/operating_system",
-    "content/docs/extended_discussion",
-    "content/docs/computer_organization_principles",
-    "content/docs/4_computer_network",
-    "content/docs",
-    "public/docs_CCCS/index.xml",
-    "public/docs_CCCS/computer_organization_principles/index.xml",
-    "public/docs_CCCS/computer_organization_principles/page/4/index.html"
+    "content/docs/operating_system/3.3 文件系统（Files & File Systems）.md"
   ]
 }
