@@ -8,7 +8,7 @@ tags:
   - Python
 categories:
   - 札记
-description: 本文记录了一位绝望的社畜利用 AI 完成琐碎事项的自动化过程。
+description: 本文记录了一位绝望的社畜利用 AI 完成 Dirty work 自动化的过程。
 date: 2025-01-26
 lastmod: 2025-01-26
 ---
@@ -239,7 +239,7 @@ if __name__ == "__main__":
 
 抖音开放平台提供[查询特定视频数据的 API](https://developer.open-douyin.com/docs/resource/zh-CN/dop/develop/openapi/video-management/douyin/search-video/video-data)，坏消息是个人身份仅支持创建小游戏和直播小玩法，这个接口需要企业身份认证，来开启移动/网站应用的视频权限。好消息是 [Douyin_TikTok_Download_API](https://github.com/Evil0ctal/Douyin_TikTok_Download_API) 提供了类似的功能 ，坏消息 again 是它并没有提供单个视频播放、互动数据的接口。
 
-公众号的[获取图文群发每日数据接口](https://developers.weixin.qq.com/doc/offiaccount/Analytics/Graphic_Analysis_Data_Interface.html)可以获取到实时的阅读数据，但需要公众号管理员权限开通验证 access_token，我的操作权限不够，此外点赞、在看和转发等互动数据也无法获取。第三方实现通常需要通过代理抓包，但关键参数也需要手动获取，因为 key 会定时刷新……详见 [https://github.com/wnma3mz/wechat_articles_spider。同为腾讯系的视频号状况也类似，作为麻瓜和腾讯](https://github.com/wnma3mz/wechat_articles_spider%E3%80%82%E5%90%8C%E4%B8%BA%E8%85%BE%E8%AE%AF%E7%B3%BB%E7%9A%84%E8%A7%86%E9%A2%91%E5%8F%B7%E7%8A%B6%E5%86%B5%E4%B9%9F%E7%B1%BB%E4%BC%BC%EF%BC%8C%E4%BD%9C%E4%B8%BA%E9%BA%BB%E7%93%9C%E5%92%8C%E8%85%BE%E8%AE%AF) battle 的成本过高，遂放弃。
+公众号的[获取图文群发每日数据接口](https://developers.weixin.qq.com/doc/offiaccount/Analytics/Graphic_Analysis_Data_Interface.html)可以获取到实时的阅读数据，但需要公众号管理员权限开通验证 access_token，我的操作权限不够，此外点赞、在看和转发等互动数据也无法获取。第三方实现通常需要通过代理抓包，但关键参数也需要手动获取，因为 key 会定时刷新……详见 [wechat_articles_spider](https://github.com/wnma3mz/wechat_articles_spider)。同为腾讯系的视频号状况也类似，作为麻瓜和腾讯 battle 的成本过高，遂放弃。
 
 你看，世上无难事，只要肯放弃(。本想偷个懒以项目为单位获取全平台的播放量数据，结果转了一圈下来四处撞墙。事已至此，还是先把基本流程跑通，给这件事画个句号。
 
@@ -912,7 +912,7 @@ if __name__ == "__main__":
 
 现在「设置关键词筛选 -> 给直链跳转删除」比起之前「逐条翻评论 -> 定向删除」来得方便，不过理论上还可以在飞书消息[加个交互](https://open.feishu.cn/document/uAjLw4CM/ukzMukzMukzM/feishu-cards/configuring-card-interactions)，结合 [async def delete()](https://nemo2011.github.io/bilibili-api/#/modules/comment?id=async-def-delete) 就可以直接一键删除，不用二次跳转网页。
 
-是的，这里又要有但是了，账号会需要在浏览器长期登录账户以便投稿，这样会导致 Cookies 被刷新……。总之，以下是再凑合一下的版本：
+是的，这里又要有但是了，账号会需要在浏览器长期登录账户以便投稿，这样会导致 Cookies 被刷新……。总之，以下是再凑合一下的版本(这段代码比较长，可以戳右侧目录跳过。)：  
 
 ```python
 from bilibili_api import comment, Credential
